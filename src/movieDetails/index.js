@@ -43,23 +43,21 @@ const MovieDetails = () => {
       <div
         style={{
           position: 'absolute',
-          top: '30%',
-          left: '30%',
+          bottom: '0%',
           transform: 'translate(-50%, -50%)',
           color: 'white',
-          textAlign: 'center',
+          left: '50%',
           padding: '20px',
-          backgroundColor: 'rgba(0, 0, 0, 0.6)',
           borderRadius: '10px',
           width: '60%',
         }}
       >
-        <h1 style={{ fontSize: '3rem', marginBottom: '20px' }}>{movie.title}</h1>
-        <p style={{ fontSize: '1.2rem', margin: '10px 0' }}>
-          <strong>Release Date:</strong> {movie.release_date}
+        <h1 style={{ fontSize: '3rem', marginBottom: '20px',opacity: 0.6 }}>{movie.title}</h1>
+        <p style={{ fontSize: '1.2rem', margin: '10px 0',opacity: 0.6 }}>
+        Release Date: {movie.release_date}
         </p>
-        <p style={{ fontSize: '1.2rem', margin: '10px 0' }}>
-          <strong>Overview:</strong> {movie.overview}
+        <p style={{ fontSize: '1.2rem', margin: '10px 0',opacity: 0.6 }}>
+          Overview: {movie.overview}
         </p>
       </div>
     </div>
